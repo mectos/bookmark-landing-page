@@ -1,0 +1,33 @@
+/***********\
+   Layout
+\***********/
+
+$mobile: 375px;
+$desktop: 1440px;
+
+/***********\
+   Colors
+\***********/
+
+// Primary
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+
+// Neutral
+$white: #f7f7f7;
+$grayish-blue: hsl(229, 8%, 60%);
+$dark-blue: hsl(229, 31%, 21%);
+
+/***********\
+ Typography
+\***********/
+
+// Body Copy
+$font-size: 18px;
+
+// Fonts
+$font-stack: 'Rubik', sans-serif;
+
+// Weights
+$font-regular: 400;
+$font-medium: 500;

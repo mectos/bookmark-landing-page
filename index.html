@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="A Frontend Mentor Project">
+		<meta name="author" content="mectos">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!-- PRELOADS -->
+		<link rel="preload" href="build/styles/main.css" as="style">
+		<link rel="preload" href="build/scripts/app.min.js" as="script">
+		<link rel="preload" href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" as="style">
+		<link rel="preload" href="https://kit.fontawesome.com/0789c002fb.js" as="script">
+		
+		<!-- LINK TO CSS -->
+		<link rel="stylesheet" href="build/styles/main.css" type="text/css">
+
+		<!-- FONT -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap">
+
+		<!-- FONT AWESOME -->
+		<script src="https://kit.fontawesome.com/0789c002fb.js" crossorigin="anonymous"></script>
+
+		<!-- LIVE RELOAD SUBLIME-TEXT 3 -->
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+		<title>Bookmark</title>
+	</head>
+	<body>
+
+		<!-- HEADER -->
+		<header class="header">
+			<a class="logo" href="\" aria-label="Our logo, link to home page">
+				<img class="logo__svg" src="images/logo-bookmark.svg" alt="Bookmark's Company Logo">
+			</a>
+			<div id="hamburger" class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav id="navigation" class="navigation">
+				<ul class="menu">
+					<li class="menu__item"><a href="\" class="menu__link">Features</a></li>
+					<li class="menu__item"><a href="\" class="menu__link">Pricing</a></li>
+					<li class="menu__item"><a href="\" class="menu__link">Contact</a></li>
+					<li class="menu__item"><a href="\" class="menu__link button -login" data-buttonLabel="Login">Login</a></li>
+				</ul>
+				<div class="socials">
+					<a class="socials__item" href="http://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Go to our facebook page">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a class="socials__item" href="http://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Go to our twitter page">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<!-- MAIN -->
+		<main>
+
+			<!-- INTRO SECTION -->
+			<section class="intro">
+				<div class="illustration -hero" aria-hidden="true">
+					<img class="illustration__image" src="images/illustration-hero.svg" alt="A Simple Bookmark Manager">
+				</div>				
+				<div>
+					<header class="text-box">
+						<h1 class="text-box__heading -big">A Simple Bookmark Manager</h1>
+						<p class="text-box__paragraph">A clean and simple interface to organize your favourite websites. Open a new 
+  						browser tab and see your sites load instantly. Try it for free.</p>
+					</header>
+					<div class="buttons-container">
+						<button class="button -primary-blue" data-buttonLabel="Get it on Chrome">Get it on Chrome</button>
+						<button class="button -secondary" data-buttonLabel="Get it on Firefox">Get it on Firefox</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- FEATURES SECTION -->
+			<section class="features">
+				<header class="text-box">
+					<h2 class="text-box__heading">Features</h2>
+					<p class="text-box__paragraph">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+				</header>
+
+				<div class="carousel">
+					<ul class="carousel__tabs-list">
+						<li class="carousel__tab">Simple Bookmarking</li>
+						<li class="carousel__tab">Speedy Searching</li>
+						<li class="carousel__tab">Easy Sharing</li>
+					</ul>
+					
+					<div class="carousel__wrapper">
+						<div class="carousel__item">
+							<div class="illustration -carousel" aria-hidden="true">
+								<img class="illustration__image" src="images/illustration-features-tab-1.svg" alt="Bookmark in one click">
+							</div>
+							<div class="text-box">
+								<h3 class="text-box__heading -small">Bookmark in one click</h3>
+								<p class="text-box__paragraph">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+								<div class="buttons-container">
+									<button class="button -primary-blue" data-buttonLabel="More Info">More Info</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel__item">
+							<div class="illustration -carousel" aria-hidden="true">
+								<img class="illustration__image" src="images/illustration-features-tab-2.svg" alt="Intelligent search">
+							</div>
+							<div class="text-box">
+								<h3 class="text-box__heading -small">Intelligent search</h3>
+								<p class="text-box__paragraph">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+								<div class="buttons-container">
+									<button class="button -primary-blue" data-buttonLabel="More Info">More Info</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel__item">
+							<div class="illustration -carousel" aria-hidden="true">
+								<img class="illustration__image" src="images/illustration-features-tab-3.svg" alt="Share your bookmarks">
+							</div>
+							<div class="text-box">
+								<h3 class="text-box__heading -small">Share your bookmarks</h3>
+								<p class="text-box__paragraph">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+								<div class="buttons-container">
+									<button class="button -primary-blue" data-buttonLabel="More Info">More Info</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- EXTENSIONS SECTION -->
+			<section class="extensions">
+				<header class="text-box">
+					<h2 class="text-box__heading">Download the extension</h2>
+					<p class="text-box__paragraph">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+				</header>
+
+				<div class="extensions__cards-container">
+					<div class="extensions__card">
+						<img class="extensions__logo" src="images/logo-chrome.svg" alt="Google Chrome logo" aria-hidden="true">
+						<div class="text-box">
+							<h3 class="text-box__heading -small">Add to Chrome</h3>
+							<p class="text-box__paragraph">Minimum version 62</p>
+						</div>
+						<div class="buttons-container -dotted">
+							<button class="button -primary-blue" data-buttonLabel="Add & Install Extension">Add & Install Extension</button>
+						</div>
+					</div>
+					<div class="extensions__card">
+						<img class="extensions__logo" src="images/logo-firefox.svg" alt="Firefox logo" aria-hidden="true">
+						<div class="text-box">
+							<h3 class="text-box__heading -small">Add to Firefox</h3>
+							<p class="text-box__paragraph">Minimum version 55</p>
+						</div>
+						<div class="buttons-container -dotted">
+							<button class="button -primary-blue" data-buttonLabel="Add & Install Extension">Add & Install Extension</button>
+						</div>
+					</div>
+					<div class="extensions__card">
+						<img class="extensions__logo" src="images/logo-opera.svg" alt="Opera logo" aria-hidden="true">
+						<div class="text-box">
+							<h3 class="text-box__heading -small">Add to Opera</h3>
+							<p class="text-box__paragraph">Minimum version 46</p>
+						</div>
+						<div class="buttons-container -dotted">
+							<button class="button -primary-blue" data-buttonLabel="Add & Install Extension">Add & Install Extension</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- FAQ SECTION -->
+			<section class="faq">
+				<header class="text-box">
+					<h2 class="text-box__heading">Frequently Asked Questions</h2>
+					<p class="text-box__paragraph">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+				</header>
+
+				<div class="questions">
+					<div class="questions__item">
+						<p class="questions__question">What is Bookmark?</p>
+						<p class="questions__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+					</div>
+
+					<div class="questions__item">
+						<p class="questions__question">How can I request a new browser?</p>
+						<p class="questions__answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+					</div>
+
+					<div class="questions__item">
+						<p class="questions__question">Is there a mobile app?</p>
+						<p class="questions__answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+					</div>
+
+					<div class="questions__item">
+						<p class="questions__question">What about other Chromium browsers?</p>
+						<p class="questions__answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+					</div>
+				</div>
+				
+				<div class="buttons-container">
+					<button class="button -primary-blue" data-buttonLabel="More Info">More Info</button>
+				</div>
+			</section>
+
+			<!-- NEWSLETTER SECTION -->
+			<section class="newsletter">
+				<header class="text-box">
+					<p class="text-box__pre-heading">35,000+ already joined</p>
+					<h2 class="text-box__heading">Stay up-to-date with what we’re doing</h2>
+				</header>
+
+				<form class="form" action="#" method="POST">
+					<div class="form__field">
+						<div class="form__input-box">
+							<input class="form__input" type="email" aria-label="Email Address" placeholder="example@bookmark.com">
+						</div>
+						<span class="form__message">Whoops, make sure it's an email</span>
+					</div>
+					
+					<div class="buttons-container">
+						<button class="button -primary-red" type="submit" data-buttonLabel="Contact Us">Contact Us</button>
+					</div>
+				</form>
+			</section>
+			
+			<!-- FOOTER -->
+			<footer class="footer">
+				<a class="logo" href="\" aria-label="Our logo, link to home page">
+					<img class="logo__svg" src="images/logo-bookmark.svg" alt="Bookmark's Company Logo">
+				</a>
+				
+				<nav class="navigation">
+					<ul class="menu">
+						<li class="menu__item"><a href="\" class="menu__link">Features</a></li>
+						<li class="menu__item"><a href="\" class="menu__link">Pricing</a></li>
+						<li class="menu__item"><a href="\" class="menu__link">Contact</a></li>
+					</ul>
+					<div class="socials">
+						<a class="socials__item" href="http://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Go to our facebook page">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a class="socials__item" href="http://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Go to our twitter page">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+				</nav>			
+			</footer>
+		</main>
+		<script src="build/scripts/app.min.js" defer></script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "A Frontend Mentor Intermediate Level Project",
+  "main": "app.min.js",
+  "dependencies": {
+    "load-grunt-tasks": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.7.1",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mectos/bookmark-landing-page.git"
+  },
+  "author": "mectos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mectos/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/mectos/bookmark-landing-page#readme",
+  "browserslist": [
+    "defaults"
+  ]
+}
