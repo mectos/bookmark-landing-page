@@ -1,0 +1,11 @@
+.navigation {
+	display: none;
+	width: 100vw;
+	position: absolute;
+	background-color: $dark-blue;
+	opacity: 0.9;
+	z-index: 2;
+	&.-open {
+		display: block;
+	}
+}
