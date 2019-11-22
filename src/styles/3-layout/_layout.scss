@@ -37,13 +37,6 @@ section {
 	&__image {
 		width: 90%;
 	}
-
-	&.-hero {
-		// margin-left: 50%;
-	}
-	&-.carousel {
-		
-	}
 	
 	&.-hero::after {
 		content: "";
@@ -57,7 +50,6 @@ section {
 		border-radius: 999rem 0 0 999rem;
 		margin-right: -20%;
 	}
-
 
 	&.-carousel::after {
 		content: "";

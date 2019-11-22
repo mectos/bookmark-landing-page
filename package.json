@@ -4,12 +4,13 @@
   "description": "A Frontend Mentor Intermediate Level Project",
   "main": "app.min.js",
   "dependencies": {
+    "grunt-cli": "^1.3.2",
     "load-grunt-tasks": "^5.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "autoprefixer": "^9.7.1",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "autoprefixer": "^9.7.2",
     "grunt": "^1.0.4",
     "grunt-babel": "^8.0.0",
     "grunt-contrib-sass": "^1.0.0",
