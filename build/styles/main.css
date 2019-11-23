@@ -106,71 +106,6 @@ h3 {
    GLOBAL
 \**********/
 section {
-  margin-bottom: 20%;
-}
-section:last-of-type {
-  margin-bottom: unset;
-}
-
-.intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  align-item: center;
-  width: 100%;
-}
-
-.illustration {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: inherit;
-  margin: 0 0 56px;
-}
-.illustration__image {
-  width: 90%;
-}
-.illustration.-hero::after {
-  content: "";
-  position: absolute;
-  top: 25%;
-  right: 0;
-  width: 80%;
-  height: 80%;
-  background-color: #5368df;
-  z-index: -2;
-  border-radius: 999rem 0 0 999rem;
-}
-.illustration.-carousel::after {
-  content: "";
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 80%;
-  height: 65%;
-  background-color: #5368df;
-  z-index: -2;
-  border-radius: 0 999rem 999rem 0;
-}
-
-/**********\
-   HEADER
-\**********/
-section {
   padding: 0 5%;
   margin-bottom: 15%;
 }
@@ -251,6 +186,17 @@ section:last-of-type {
   margin-left: -25%;
 }
 
+.text-box {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.text-box__heading {
+  margin-bottom: 3%;
+}
+
+/**********\
+   HEADER
+\**********/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,13 +220,29 @@ section:last-of-type {
   padding: 0 1%;
   margin-right: 5%;
 }
+.header .navigation {
+  display: none;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.buttons-container .button:first-of-type {
+  margin-right: 3%;
+}
 
 .button {
-  padding: 0.7rem 1.7rem;
-  margin: 0;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: calc($font-size * 0.9);
+  font-weight: 700;
+  white-space: nowrap;
   cursor: pointer;
   text-align: center;
   -webkit-transition: background 250ms ease-in-out, -webkit-transform 150ms ease;
@@ -295,11 +257,6 @@ section:last-of-type {
 }
 .button:active {
   outline: none;
-}
-.button:hover {
-  -webkit-transform: scale(0.98);
-      -ms-transform: scale(0.98);
-          transform: scale(0.98);
 }
 .button.-primary-blue {
   background-color: #5368df;

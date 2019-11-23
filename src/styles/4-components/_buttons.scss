@@ -1,9 +1,18 @@
+.buttons-container {
+	display: flex;
+	flex-direction: row;
+
+	& .button:first-of-type {
+		margin-right: 3%;
+	}
+}
+
 .button {
-	padding: 0.7rem 1.7rem;
-	margin: 0;
+	padding: 0.6rem 1.2rem;
 	text-decoration: none;
-	font-size: $font-size;
-	font-weight: $font-medium;
+	font-size: calc($font-size * 0.9);
+	font-weight: $font-bold;
+	white-space: nowrap;
 	cursor: pointer;
 	text-align: center;
 	transition: background 250ms ease-in-out, transform 150ms ease;
@@ -12,9 +21,6 @@
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	&:active {
 		outline: none;
-	}
-	&:hover {
-		transform: scale(.98);
 	}
 
 	&.-primary-blue {
