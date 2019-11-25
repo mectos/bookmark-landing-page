@@ -1,31 +1,32 @@
 html {
 	box-sizing: border-box;
 	font-size: $font-size;
+	scroll-behavior: smooth;
 }
 
 *,
-*::before,
-*::after {
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+	*::before,
+	*::after {
+		box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 
-body {
-	font-family: $font-stack;
-	font-weight: $font-regular;
-	line-height: 1.7;
-	background-color: white;
-	color: $dark-blue;
-}
+	body {
+		font-family: $font-stack;
+		font-weight: $font-regular;
+		line-height: 1.7;
+		background-color: white;
+		color: $dark-blue;
+	}
 
-p {
-	margin: 0;
-}
+	p {
+		margin: 0;
+	}
 
-h1,
-h2,
-h3 {
-	font-weight: $font-medium;
-	margin: 0;
-}
+	h1,
+	h2,
+	h3 {
+		font-weight: $font-medium;
+		margin: 0;
+	}

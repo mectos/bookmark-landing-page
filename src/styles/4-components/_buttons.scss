@@ -1,16 +1,12 @@
 .buttons-container {
 	display: flex;
 	flex-direction: row;
-
-	& .button:first-of-type {
-		margin-right: 3%;
-	}
 }
 
 .button {
-	padding: 0.6rem 1.2rem;
+	padding: 0.6rem 1.1rem;
 	text-decoration: none;
-	font-size: calc($font-size * 0.9);
+	font-size: calc(#{$font-size} * 0.8);
 	font-weight: $font-bold;
 	white-space: nowrap;
 	cursor: pointer;
@@ -19,6 +15,11 @@
 	border: none;
 	border-radius: 7px;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+	&:focus {
+		outline: none;
+	}
+
 	&:active {
 		outline: none;
 	}
@@ -33,6 +34,16 @@
 		}
 	}
 
+	&.-primary-red {
+		background-color: $soft-red;
+		color: $white;
+		border: 3px solid $soft-red;
+		&:hover {
+			background-color: $white;
+			color: $soft-red;
+		}
+	}
+
 	&.-secondary {
 		background-color: $white;
 		color: $dark-blue;
@@ -42,4 +53,26 @@
 			border: 3px solid $dark-blue;
 		}
 	}
+
+	.intro & {
+		margin-right: 3%;
+	}
+
+	&.-login {
+		width: 100%;
+		font-size: $font-size;
+		border: 3px solid $white;
+		box-shadow: none;
+	}
+}
+
+// Reset button props for the faq buttons
+.faq__button {
+	padding: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background-color: inherit;
+	position: absolute;
+	right: 0;
+	top: 22px;
 }

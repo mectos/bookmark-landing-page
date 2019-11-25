@@ -1,14 +1,13 @@
 /**********\
-   GLOBAL
+GLOBAL
 \**********/
 
 // For the seperation of sections
 section {
-	padding: 0 5%;
-	margin-bottom: 15%;
+	padding: 0 10%;
+	margin-bottom: 8rem;
 	&:last-of-type {
 		margin-bottom: unset;
-		padding: 0;
 	}
 }
 
@@ -31,24 +30,23 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100vw;
+	width: 112%;
 	margin: 0 0 56px;
 
 	&__image {
 		width: 90%;
 	}
-	
+
 	&.-hero::after {
 		content: "";
 		position: absolute;
 		top: 25%;
 		right: 0;
-		width: 90%;
+		width: 70%;
 		height: 80%;
 		background-color: #5368df;
 		z-index: -2;
 		border-radius: 999rem 0 0 999rem;
-		margin-right: -20%;
 	}
 
 	&.-carousel::after {
@@ -71,31 +69,5 @@ section {
 
 	&__heading {
 		margin-bottom: 3%;
-	}
-}
-
-/**********\
-   HEADER
-\**********/
-
-.header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 8%;
-
-	& .logo {
-		padding: 5%;
-	}
-
-	.hamburger {
-		padding: 0 1%;
-		margin-right: 5%;
-	}
-	
-	// Not displaying the top navigation because it's gonna be overlayed
-	.navigation {
-		display: none;
 	}
 }

@@ -1,0 +1,52 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.faq {
+
+	&__items {
+		margin-bottom: 5%;
+	}
+
+	&__item {
+		cursor: pointer;
+	}
+
+	&__item.-active {
+		.faq__icon {
+			transform: rotate(180deg);
+			filter: hue-rotate(90deg);
+		}
+		.faq__answer {
+			display: block;
+			animation: fadeIn 500ms;
+		}
+	}
+
+	&__question {
+		position: relative;
+		cursor: pointer;
+		border-bottom: 1px solid lightgrey;
+		padding: 15px 0;
+		font-weight: $font-medium;
+	}
+
+	&__answer {
+		display: none;
+		padding: 8px 0;
+	}
+
+	&__question, &__answer {
+		font-size: 0.9rem;
+	}
+
+	.buttons-container {
+		display: flex;
+		justify-content: center;
+	}
+}

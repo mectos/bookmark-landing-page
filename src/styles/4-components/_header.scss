@@ -1,0 +1,16 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8%;
+
+	& .logo {
+		padding: 8%;
+	}
+
+	.hamburger {
+		padding: 0 1%;
+		margin-right: 5%;
+	}
+}

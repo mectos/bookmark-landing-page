@@ -6,3 +6,4 @@ app.min.js.map
 main.css.map
 yarn.lock
 package-lock.json
+*.swp

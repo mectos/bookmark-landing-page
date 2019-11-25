@@ -1,0 +1,51 @@
+.carousel {
+	&__tabs-list {
+		text-align: center;
+		margin-bottom:  12%;
+	}
+	&__tab {
+		padding: 10px 0;
+		border-top: 1px solid lightgray;
+		position: relative;
+		&:last-of-type {
+			border-bottom: 1px solid lightgray;
+		}
+		input[type="radio"] {
+			display: none;
+		}
+	}
+	&__label {
+		cursor: pointer;
+		&:hover {
+			color: $soft-red;
+		}
+		&.-active {
+			color: $dark-blue;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0px;
+				height: 5px;
+				width: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: $soft-red;
+			}
+		}
+	}
+
+	&__item {
+		display: none;
+		&.-active {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.buttons-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 5%;
+	}
+}
